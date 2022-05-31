@@ -8,13 +8,18 @@ public class RandomPosition : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        xpos = Random.Range(-2.30f, 2.30f);
-        transform.Translate(xpos, 0, 0);
+        RandomPos();
     }
 
     // Update is called once per frame
     void Update()
     {
 
+    }
+
+    public void RandomPos()
+    {
+        xpos = Random.Range(-2.30f, 2.30f);
+        transform.Translate(xpos, 0, 0);
     }
 }
